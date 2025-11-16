@@ -1,0 +1,17 @@
+{
+  "name": "_Project.Gameplay",
+  "rootNamespace": "",
+  "references": [
+    "GUID:2c0f8e9b3d904c08b8c42e0f5a83d0de",
+    "Unity.InputSystem"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

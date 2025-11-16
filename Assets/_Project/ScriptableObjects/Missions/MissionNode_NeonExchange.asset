@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c7e76e6be44edc81579a26cae9fcbe, type: 3}
+  m_Name: MissionNode_NeonExchange
+  m_EditorClassIdentifier:
+  id: MN_NEON_EXCHANGE
+  displayName: Neon Exchange Breach
+  description: Infiltrate the neon derivatives market hub to steal volatility feeds feeding the city AI.
+  environmentTag: NeonExchange
+  recommendedRole: 0
+  connectedNodes: []
+  difficultyRating: 1.5
+  objectives:
+  - id: OBJ_REACH_TRADING_FLOOR
+    displayName: Reach Trading Floor
+    type: 0
+    targetId: ENTRY_ZONE
+    requiredValue: 1
+  - id: OBJ_HACK_MARKET_CONSOLE
+    displayName: Hack the Market Console
+    type: 1
+    targetId: CONSOLE_ALPHA
+    requiredValue: 1
+  - id: OBJ_DEFEND_DATA_RELAY
+    displayName: Hold the Data Relay
+    type: 2
+    targetId: DEFEND_ZONE
+    requiredValue: 15
