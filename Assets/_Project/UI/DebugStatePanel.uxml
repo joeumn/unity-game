@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+  <ui:Style>
+    .panel {
+      padding: 12px;
+      background-color: rgba(10, 10, 20, 0.65);
+      border-radius: 4px;
+      font-size: 14px;
+      color: #f0f0f0ff;
+    }
+    .section {
+      margin-top: 8px;
+      padding: 6px;
+      border-top-color: #2a2a2aff;
+      border-top-width: 1px;
+      border-top-style: solid;
+    }
+    .button-row {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      gap: 4px;
+    }
+  </ui:Style>
+  <ui:VisualElement class="panel">
+    <ui:Label text="Game State Debug Panel" class="unity-font-style-bold" />
+    <ui:Label name="state-label" text="Current State: --" />
+    <ui:VisualElement class="button-row">
+      <ui:Button name="btn-lobby" text="Lobby" />
+      <ui:Button name="btn-briefing" text="Briefing" />
+      <ui:Button name="btn-mission" text="Mission" />
+      <ui:Button name="btn-debrief" text="Debrief" />
+    </ui:VisualElement>
+    <ui:VisualElement class="section">
+      <ui:Label text="Player Profile" class="unity-font-style-bold" />
+      <ui:Label name="profile-info" text="No profile loaded." />
+    </ui:VisualElement>
+    <ui:VisualElement class="section">
+      <ui:Label text="Featured Mission" class="unity-font-style-bold" />
+      <ui:Label name="mission-info" text="No mission selected." />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>
