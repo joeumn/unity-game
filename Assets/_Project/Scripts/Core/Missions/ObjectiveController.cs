@@ -26,7 +26,10 @@ namespace Project.Core.Missions
 
         private void Awake()
         {
-            BuildRuntimeObjectives(defaultObjectives);
+            if (runtimeObjectives.Count == 0)
+            {
+                BuildRuntimeObjectives(defaultObjectives);
+            }
         }
 
         private void OnEnable()
